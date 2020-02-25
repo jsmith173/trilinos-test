@@ -1,0 +1,90 @@
+##############################################################################
+#
+# Make variables for use by Trilinos clients. 
+#
+# Do not edit: This file was generated automatically by CMake.
+#
+##############################################################################
+
+
+## ---------------------------------------------------------------------------
+## Compilers used by Trilinos build
+## ---------------------------------------------------------------------------
+
+Trilinos_CXX_COMPILER=/usr/bin/mpic++
+
+Trilinos_C_COMPILER=/usr/bin/mpicc
+
+Trilinos_Fortran_COMPILER=/usr/bin/mpif77
+
+
+## ---------------------------------------------------------------------------
+## Compiler flags used by Trilinos build
+## ---------------------------------------------------------------------------
+
+Trilinos_CXX_COMPILER_FLAGS=  -O3 -fPIC -std=c++11 -O3 -DNDEBUG
+
+Trilinos_C_COMPILER_FLAGS=  -O3 -fPIC -O3 -DNDEBUG
+
+Trilinos_Fortran_COMPILER_FLAGS=  -O3 -fPIC -O3
+
+## Extra link flags (e.g., specification of fortran libraries)
+Trilinos_EXTRA_LD_FLAGS=
+
+## This is the command-line entry used for setting rpaths. In a build
+## with static libraries it will be empty. 
+Trilinos_SHARED_LIB_RPATH_COMMAND=
+Trilinos_BUILD_SHARED_LIBS=FALSE
+
+Trilinos_LINKER=/usr/bin/ld
+Trilinos_AR=/usr/bin/ar
+
+
+## ---------------------------------------------------------------------------
+## Set library specifications and paths 
+## ---------------------------------------------------------------------------
+
+## The project version number
+Trilinos_VERSION=12.17
+
+## The project include file directories.
+Trilinos_INCLUDE_DIRS= -I/home/attila/Trilinos-install2/include
+
+## The project library directories.
+Trilinos_LIBRARY_DIRS= -L/home/attila/Trilinos-install2/lib
+
+## The project libraries.
+Trilinos_LIBRARIES= /home/attila/Trilinos-install2/lib/libtriutils.a /home/attila/Trilinos-install2/lib/libaztecoo.a /home/attila/Trilinos-install2/lib/libepetra.a /home/attila/Trilinos-install2/lib/libteuchosremainder.a /home/attila/Trilinos-install2/lib/libteuchosnumerics.a /home/attila/Trilinos-install2/lib/libteuchoscomm.a /home/attila/Trilinos-install2/lib/libteuchosparameterlist.a /home/attila/Trilinos-install2/lib/libteuchosparser.a /home/attila/Trilinos-install2/lib/libteuchoscore.a
+
+## The project tpl include paths
+Trilinos_TPL_INCLUDE_DIRS= -I/usr/include/suitesparse
+
+## The project tpl library paths
+Trilinos_TPL_LIBRARY_DIRS=
+
+## The project tpl libraries
+Trilinos_TPL_LIBRARIES= /usr/lib/x86_64-linux-gnu/libdl.so /usr/lib/x86_64-linux-gnu/libamd.so /usr/lib/liblapack.so /usr/lib/libblas.so
+
+## ---------------------------------------------------------------------------
+## MPI specific variables
+##   These variables are provided to make it easier to get the mpi libraries
+##   and includes on systems that do not use the mpi wrappers for compiling
+## ---------------------------------------------------------------------------
+
+Trilinos_MPI_LIBRARIES=
+Trilinos_MPI_LIBRARY_DIRS=
+Trilinos_MPI_INCLUDE_DIRS=
+Trilinos_MPI_EXEC=/usr/bin/mpiexec
+Trilinos_MPI_EXEC_MAX_NUMPROCS=4
+Trilinos_MPI_EXEC_NUMPROCS_FLAG=-np
+
+## ---------------------------------------------------------------------------
+## Set useful general variables 
+## ---------------------------------------------------------------------------
+
+## The packages enabled for this project
+Trilinos_PACKAGE_LIST= TrilinosCouplings NOX Belos Ifpack Amesos AztecOO Isorropia TrilinosSS EpetraExt Triutils Zoltan Epetra Sacado Teuchos TeuchosRemainder TeuchosNumerics TeuchosComm TeuchosParameterList TeuchosParser TeuchosCore
+
+## The TPLs enabled for this project
+Trilinos_TPL_LIST= DLlib AMD LAPACK BLAS MPI
+

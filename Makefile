@@ -1,4 +1,4 @@
-include $(HOME)/Trilinos-install/include/Makefile.export.Trilinos
+include Makefile.export.Trilinos
 
 CC = $(Trilinos_C_COMPILER)
 CFLAGS = $(Trilinos_C_COMPILER_FLAGS)
@@ -11,7 +11,7 @@ LDLIBS = $(Trilinos_LIBRARIES)
 	
 
 cxx_main: cxx_main.o 
-	$(CXX) $(LDFLAGS) $(LDLIBS) -o cxx_main cxx_main.o 
+	$(CXX) cxx_main.o -o cxx_main $(Trilinos_LIBRARIES) $(Trilinos_TPL_LIBRARIES) 
 
 cxx_main.o: cxx_main.cpp 
 	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c cxx_main.cpp
