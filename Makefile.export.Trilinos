@@ -6,6 +6,7 @@
 #
 ##############################################################################
 
+Trilinos_INSTALL = /home/attila/Trilinos-install2
 
 ## ---------------------------------------------------------------------------
 ## Compilers used by Trilinos build
@@ -48,13 +49,13 @@ Trilinos_AR=/usr/bin/ar
 Trilinos_VERSION=12.17
 
 ## The project include file directories.
-Trilinos_INCLUDE_DIRS= -I/home/attila/Trilinos-install2/include
+Trilinos_INCLUDE_DIRS= -I$(Trilinos_INSTALL)/include
 
 ## The project library directories.
-Trilinos_LIBRARY_DIRS= -L/home/attila/Trilinos-install2/lib
+Trilinos_LIBRARY_DIRS= -L$(Trilinos_INSTALL)/lib
 
 ## The project libraries.
-Trilinos_LIBRARIES= /home/attila/Trilinos-install2/lib/libtriutils.a /home/attila/Trilinos-install2/lib/libaztecoo.a /home/attila/Trilinos-install2/lib/libepetra.a /home/attila/Trilinos-install2/lib/libteuchosremainder.a /home/attila/Trilinos-install2/lib/libteuchosnumerics.a /home/attila/Trilinos-install2/lib/libteuchoscomm.a /home/attila/Trilinos-install2/lib/libteuchosparameterlist.a /home/attila/Trilinos-install2/lib/libteuchosparser.a /home/attila/Trilinos-install2/lib/libteuchoscore.a
+Trilinos_LIBRARIES= $(Trilinos_INSTALL)/lib/libtriutils.a $(Trilinos_INSTALL)/lib/libaztecoo.a $(Trilinos_INSTALL)/lib/libepetra.a $(Trilinos_INSTALL)/lib/libteuchosremainder.a $(Trilinos_INSTALL)/lib/libteuchosnumerics.a $(Trilinos_INSTALL)/lib/libteuchoscomm.a $(Trilinos_INSTALL)/lib/libteuchosparameterlist.a $(Trilinos_INSTALL)/lib/libteuchosparser.a $(Trilinos_INSTALL)/lib/libteuchoscore.a
 
 ## The project tpl include paths
 Trilinos_TPL_INCLUDE_DIRS= -I/usr/include/suitesparse

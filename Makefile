@@ -16,3 +16,7 @@ cxx_main: cxx_main.o
 cxx_main.o: cxx_main.cpp 
 	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c cxx_main.cpp
 
+clean:
+	rm -f cxx_main
+	rm -f cxx_main.o
+	
