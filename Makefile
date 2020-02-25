@@ -9,7 +9,9 @@ CXXFLAGS = $(Trilinos_CXX_COMPILER_FLAGS)
 LDFLAGS = $(Trilinos_LIBRARY_DIRS)
 LDLIBS = $(Trilinos_LIBRARIES)
 	
-
+all:
+	cxx_main
+	
 cxx_main: cxx_main.o 
 	$(CXX) cxx_main.o -o cxx_main $(Trilinos_LIBRARIES) $(Trilinos_TPL_LIBRARIES) 
 
